@@ -258,7 +258,6 @@ namespace ConsoleApp3
             }
             Console.ReadKey();
         }
-
         //5.Дан массив А(6). Найти сумму и количество положительных элементов, расположенных между минимальным и максимальным элементами.
         static void MinMax()
         {
@@ -351,6 +350,7 @@ namespace ConsoleApp3
             Console.WriteLine("max=" + " " + max);
             Console.ReadKey();
         }
+
 
 
         //Тебе передается массив в функцию, нужно вывести каждый четный элемент
