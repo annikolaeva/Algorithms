@@ -348,7 +348,7 @@ namespace ConsoleApp3
                 }
 
             }
-            Console.WriteLine("max =" + " " + max);
+            Console.WriteLine("max=" + " " + max);
             Console.ReadKey();
         }
 
