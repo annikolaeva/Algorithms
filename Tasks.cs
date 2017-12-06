@@ -291,7 +291,7 @@ namespace ConsoleApp3
         //элементов с четными номерами массива.
         static void MinPositiveEvenNum()
         {
-            int[] a = { 2, 5, 1, -3, 0, -1, 4, -6 };
+            int[] a = { 2, 5, 1, -3, 0, -1, 4, -7 };
             int min = a[0];
             for (int i = 0; i < a.Length; i++)
             {
@@ -312,7 +312,7 @@ namespace ConsoleApp3
 
         static void MinNegativeNumber()
         {
-            int[] a = { 2, 5, 1, -3, 0, -1, 4, -6 };
+            int[] a = { 2, 5, 1, -3, 0, -1, 4, -7 };
             int min = a[0];
             for (int i = 0; i < a.Length; i++)
             {
