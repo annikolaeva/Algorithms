@@ -230,16 +230,16 @@ namespace ConsoleApp3
         //Записать значения в третий массив и вывести его
         static void MergeArrays()
         {
-        int[] a = { 1, 2, 3 };
-        int[] b = { 1, 2, 3 };
+            int[] a = { 1, 2, 3 };
+            int[] b = { 1, 2, 3 };
 
-        int[] c = new int[3];
-        for (int i = 0; i < b.Length; i++ )
-        { 
-            c[i] = a[i] + b[i];
-            Console.Write(c[i]);
-         }
-        Console.ReadKey();
+            int[] c = new int[3];
+            for (int i = 0; i < b.Length; i++)
+            {
+                c[i] = a[i] + b[i];
+                Console.Write(c[i]);
+            }
+            Console.ReadKey();
         }
 
         //19.Даны массивы А(5) и В(10). Вычислить разность соответствующих элементов массивов.
