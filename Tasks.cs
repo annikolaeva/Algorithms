@@ -9,32 +9,38 @@ namespace ConsoleApp3
     class Tasks
     {
         static int num = 2;
+        
 
         static void Main(string[] args)
         {
             int[] a = { 2, 5, 8, -3, 0, -1, 4, -6 };
+            int[] h = { 0, 1, 2, 3, 4, 5, 6 };
+            int[] d = { 1, 2, 3 };
+             int[] b = { 1, 2, 3 };
+             int[] k = { 2, 3, 4 };
+            int[] m = { 1, 2, 3, 4, 5 };
 
-            GetSumPositiveNumbers(a);
-            ShowArrayValues(a);
-            GetSumNumbers(a);
-            GetAmtSumPositiveNumbers(a);
-            PrintArray(a);
-            GetMinNumber(a);
-            PrintArray(a);
-            GetMaxNumber(a);
-            PrintArray(a);
-            GetAmtNegativeNumbers(a); //3
-            GetAmtPositiveOddNumber(a); //1
-            GetAmtPositiveEvenNumber(a); //3
-            MultiplyPositiveNumbers(a); //320
-            GetAmtNumberEqualFour(a, num);
-            GetAmtNumberLessFour(a, num);
-            MergeArrays();
-            MergeArrays1();
-            MinMax();
-            MinPositiveEvenNum();
-            MinNegativeNumber();
-            MaxNumber(a);
+            //GetSumPositiveNumbers(a);
+            //ShowArrayValues(a);
+            //GetSumNumbers(a);
+            //GetAmtSumPositiveNumbers(a);
+            //PrintArray(a);
+            //GetMinNumber(a);
+            //PrintArray(a);
+            //GetMaxNumber(a);
+            //PrintArray(a);
+            //GetAmtNegativeNumbers(a); //3
+            //GetAmtPositiveOddNumber(a); //1
+            //GetAmtPositiveEvenNumber(a); //3
+            //MultiplyPositiveNumbers(a); //320
+            //GetAmtNumberEqualNumber(a, num);
+            //GetAmtNumberLessNumber(a, num);
+            //MergeArrays(d,b);
+            //MergeArrays1(k,m);
+            MinMax(h);
+            //MinPositiveEvenNum(a);
+            //MinNegativeNumber(a);
+            //MaxNumber(a);
         }
 
         static void PrintArray(int[] a)
@@ -196,7 +202,7 @@ namespace ConsoleApp3
             Console.ReadKey();
         }
         //17.Дан массив А(6). Найти  количество элементов, равных 4.
-        static void GetAmtNumberEqualFour(int[] a, int num)
+        static void GetAmtNumberEqualNumber(int[] a, int num)
         {
             int k = 0;
             for (int i = 0; i < a.Length; i++)
@@ -211,7 +217,7 @@ namespace ConsoleApp3
 
         }
         //20.Дан массив А(5). Определить количество элементов, меньших 4.
-        static void GetAmtNumberLessFour(int[] a, int num )
+        static void GetAmtNumberLessNumber(int[] a, int num )
         {
             
             int k = 0;
@@ -228,58 +234,59 @@ namespace ConsoleApp3
         }
         //18.Даны массивы А(5) и В(10). Вычислить суммы соответствующих элементов массивов (первый с первым. второй со вторым и т.д.).
         //Записать значения в третий массив и вывести его
-        static void MergeArrays()
+        static void MergeArrays(int[] d, int[] b)
         {
-            int[] a = { 1, 2, 3 };
-            int[] b = { 1, 2, 3 };
-
+      
             int[] c = new int[3];
             for (int i = 0; i < b.Length; i++)
             {
-                c[i] = a[i] + b[i];
+                c[i] = d[i] + b[i];
                 Console.Write(c[i]);
             }
             Console.ReadKey();
         }
 
         //19.Даны массивы А(5) и В(10). Вычислить разность соответствующих элементов массивов.
-        static void MergeArrays1()
+        static void MergeArrays1(int[] k, int[] m)
         {
-            int[] a = { 2, 3, 4 };
-            int[] b = { 1, 2, 3, 4, 5 };
+            
 
-            int[] c = new int[b.Length];
+            int[] c = new int[m.Length];
 
-            for (int i = 0; i < b.Length; i++)
+            for (int i = 0; i < m.Length; i++)
             {
-                if (i < a.Length)
-                    c[i] = a[i] - b[i];
+                if (i < k.Length)
+                    c[i] = k[i] - m[i];
                 Console.Write(c[i]);
             }
             Console.ReadKey();
         }
         //5.Дан массив А(6). Найти сумму и количество положительных элементов, расположенных между минимальным и максимальным элементами.
-        static void MinMax()
+        static void MinMax(int[] h)
         {
-            int[] a = { 0, 1, 2, 3, 4, 5, 6 };
-            int min = a[0];
-            int max = a[0];
+            
+            int min = h[0];
+            int max = h[0];
             int sum = 0;
             int k = 0;
-            for (int i = 0; i < a.Length; i++)
+            for (int i = 0; i < h.Length; i++)
             {
-                if (a[i] < min)
+                if (h[i] < min)
                 {
-                    min = a[i];
-                }
-                else if (a[i] > max)
-                {
-                    max = a[i];
+                    min = h[i];
                 }
             }
+            for (int i = 0; i < h.Length; i++)
+                {
+                    if (h[i] > max)
+                    {
+                        max = h[i];
+                    }
+                }
+            
             for (int i = min; i < max; i++)
             {
-                sum = sum + a[i];
+                sum = sum + h[i];
                 k = k + 1;
             }
             Console.WriteLine("sum and amount between max and min = {0} and {1}", sum, k);
@@ -289,17 +296,17 @@ namespace ConsoleApp3
 
         //23.Дан массив А(5). Найти наименьший положительный элемента среди
         //элементов с четными номерами массива.
-        static void MinPositiveEvenNum()
+        static void MinPositiveEvenNum(int[] a)
         {
-            int[] a = { 2, 5, 1, -3, 0, -1, 4, -7 };
+            
             int min = a[0];
             for (int i = 0; i < a.Length; i++)
             {
-                if (a[i] > 0 && a[i] % 2 == 0)
+                if (a[i] > 0 && a[i] % 2 != 0)
                 {
                     if (a[i] < min)
                     {
-                        min = a[0];
+                        min = a[i];
                     }
                 }
             }
@@ -310,9 +317,9 @@ namespace ConsoleApp3
         //24.Составить программу для нахождения наименьшего из отрицательных
         //элементов массива А(10).
 
-        static void MinNegativeNumber()
+        static void MinNegativeNumber(int[] a)
         {
-            int[] a = { 2, 5, 1, -3, 0, -1, 4, -7 };
+            
             int min = a[0];
             for (int i = 0; i < a.Length; i++)
             {
