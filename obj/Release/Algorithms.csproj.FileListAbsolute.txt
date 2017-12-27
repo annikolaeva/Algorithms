@@ -5,3 +5,5 @@ C:\Users\Akvelon\source\repos\ConsoleApp3\ConsoleApp3\obj\Release\Algorithms.csp
 C:\Users\Akvelon\source\repos\ConsoleApp3\ConsoleApp3\obj\Release\Algorithms.csproj.CoreCompileInputs.cache
 C:\Users\Akvelon\source\repos\ConsoleApp3\ConsoleApp3\obj\Release\ConsoleApp3.exe
 C:\Users\Akvelon\source\repos\ConsoleApp3\ConsoleApp3\obj\Release\ConsoleApp3.pdb
+C:\Users\Akvelon\source\repos\ConsoleApp3\ConsoleApp3\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Akvelon\source\repos\ConsoleApp3\ConsoleApp3\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml

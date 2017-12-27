@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp3
 {
-    class Tasks
+    public static class Tasks
     {
         static int num = 2;
         
@@ -14,7 +14,7 @@ namespace ConsoleApp3
         static void Main(string[] args)
         {
             int[] a = { 2, 5, 8, -3, 0, -1, 4, -6 };
-            int[] h = { 0, 1, 2, 3, 4, 5, 6 };
+            int[] h = {0, 1, 2, 3, 4, 5, 6 };
             int[] d = { 1, 2, 3 };
              int[] b = { 1, 2, 3 };
              int[] k = { 2, 3, 4 };
@@ -54,7 +54,7 @@ namespace ConsoleApp3
             Console.WriteLine("_____________");
         }
 
-        static void GetSumPositiveNumbers(int[] a)
+        public static int GetSumPositiveNumbers(int[] a)
         {
             int sum = 0;
             for (int i = 0; i < a.Length; i++)
@@ -65,8 +65,9 @@ namespace ConsoleApp3
                 }
 
             }
-            Console.WriteLine("sum of positive numbers is {0}", sum);
-            Console.ReadKey();
+        //    Console.WriteLine("sum of positive numbers is {0}", sum);
+       //     Console.ReadKey();
+            return sum;
         }
 
         static void ShowArrayValues(int[] a)
@@ -261,7 +262,7 @@ namespace ConsoleApp3
             }
             Console.ReadKey();
         }
-        //5.Дан массив А(6). Найти сумму и количество положительных элементов, расположенных между минимальным и максимальным элементами.
+        //5.Дан массив А(6). Найти сумму и количество положительных элементов, расположенных между минимальным и максимальным элементами (индексами).
         static void MinMax(int[] h)
         {
             
@@ -284,10 +285,13 @@ namespace ConsoleApp3
                     }
                 }
             
-            for (int i = min; i < max; i++)
-            {
-                sum = sum + h[i];
-                k = k + 1;
+                for (int i = min; i < max; i++)
+                {
+                if (h[i] > 0)
+                {
+                    sum = sum + h[i];
+                    k = k + 1;
+                }
             }
             Console.WriteLine("sum and amount between max and min = {0} and {1}", sum, k);
             Console.ReadKey();

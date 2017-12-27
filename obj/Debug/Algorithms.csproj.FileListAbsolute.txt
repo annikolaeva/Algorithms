@@ -1,2 +1,8 @@
 C:\Users\Akvelon\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\ConsoleApp3.exe
 C:\Users\Akvelon\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\ConsoleApp3.pdb
+C:\Users\Akvelon\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\ConsoleApp3.exe.config
+C:\Users\Akvelon\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\ConsoleApp3.exe
+C:\Users\Akvelon\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\ConsoleApp3.pdb
+C:\Users\Akvelon\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Akvelon\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\Akvelon\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\Algorithms.csproj.CoreCompileInputs.cache
