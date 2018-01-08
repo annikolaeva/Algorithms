@@ -7,3 +7,11 @@ C:\Users\Akvelon\source\repos\ConsoleApp3\ConsoleApp3\obj\Release\ConsoleApp3.ex
 C:\Users\Akvelon\source\repos\ConsoleApp3\ConsoleApp3\obj\Release\ConsoleApp3.pdb
 C:\Users\Akvelon\source\repos\ConsoleApp3\ConsoleApp3\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\Users\Akvelon\source\repos\ConsoleApp3\ConsoleApp3\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\User\source\repos\Algorithms\bin\Release\ConsoleApp3.exe.config
+C:\Users\User\source\repos\Algorithms\bin\Release\ConsoleApp3.exe
+C:\Users\User\source\repos\Algorithms\bin\Release\ConsoleApp3.pdb
+C:\Users\User\source\repos\Algorithms\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\User\source\repos\Algorithms\obj\Release\Algorithms.csprojResolveAssemblyReference.cache
+C:\Users\User\source\repos\Algorithms\obj\Release\Algorithms.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Algorithms\obj\Release\ConsoleApp3.exe
+C:\Users\User\source\repos\Algorithms\obj\Release\ConsoleApp3.pdb

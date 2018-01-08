@@ -20,9 +20,9 @@ namespace ConsoleApp3
              int[] k = { 2, 3, 4 };
             int[] m = { 1, 2, 3, 4, 5 };
 
-            //GetSumPositiveNumbers(a);
+            GetSumPositiveNumbers(a);
             //ShowArrayValues(a);
-            //GetSumNumbers(a);
+            GetSumNumbers(a);
             //GetAmtSumPositiveNumbers(a);
             //PrintArray(a);
             //GetMinNumber(a);
@@ -36,8 +36,8 @@ namespace ConsoleApp3
             //GetAmtNumberEqualNumber(a, num);
             //GetAmtNumberLessNumber(a, num);
             //MergeArrays(d,b);
-            //MergeArrays1(k,m);
-            MinMax(h);
+            //MergeArrays1(k, m);
+            //MinMax(h);
             //MinPositiveEvenNum(a);
             //MinNegativeNumber(a);
             //MaxNumber(a);
@@ -81,15 +81,16 @@ namespace ConsoleApp3
         }
 
         //Найти сумму всех элементов массива
-        static void GetSumNumbers(int[] a)
+        public static void GetSumNumbers(int[] a)
         {
             int sum = 0;
             for (int i = 0; i < a.Length; i++)
             {
                 sum = sum + a[i];
             }
-            Console.WriteLine(sum);
-            Console.ReadKey();
+            // Console.WriteLine(sum);
+            //Console.ReadKey();
+            return sum;
         }
 
 
@@ -238,7 +239,7 @@ namespace ConsoleApp3
         static void MergeArrays(int[] d, int[] b)
         {
       
-            int[] c = new int[3];
+            int[] c = new int[b.Length];
             for (int i = 0; i < b.Length; i++)
             {
                 c[i] = d[i] + b[i];
@@ -250,7 +251,8 @@ namespace ConsoleApp3
         //19.Даны массивы А(5) и В(10). Вычислить разность соответствующих элементов массивов.
         static void MergeArrays1(int[] k, int[] m)
         {
-            
+            //int[] k = { 2, 3, 4 };
+            //int[] m = { 1, 2, 3, 4, 5 };
 
             int[] c = new int[m.Length];
 
